@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vageesha | Portfolio &amp; Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Loading Screen: Underwater Entrance -->
+  <div id="loader" class="loader-overlay" aria-hidden="true">
+    <div class="loader-content">
+      <div class="loader-particle"></div>
+      <p class="loader-text">Diving into Vageesha's world...</p>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- Background Canvas for Bioluminescent Ocean -->
+  <canvas id="ocean-canvas" aria-hidden="true"></canvas>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">V<span class="logo-wave">~</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+    </button>
+    <div class="nav-menu" id="nav-menu">
+      <a href="#hero" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#presentations" class="nav-link">Presentations</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#interests" class="nav-link">Interests</a>
+      <a href="#resume" class="nav-link">Resume</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero" class="section hero-section">
+    <div class="hero-content">
+      <span class="meta-label">BBA Student | Digital Business &amp; Entrepreneurship</span>
+      <h1 class="hero-name">VAGEESHA</h1>
+      <p class="hero-hook">Curious by nature. Creative by instinct. Driven by possibilities.</p>
+      <p class="hero-desc">I'm exploring the intersection of business, creativity and digital experiences. From coordinating college events to presenting ideas and experimenting with design, I enjoy learning, creating and bringing ideas to life.</p>
+      <div class="btn-group">
+        <a href="#about" class="btn btn-primary">Explore My World</a>
+        <a href="resume.pdf" download="Vageesha_Resume.pdf" class="btn btn-secondary">Download Resume</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span class="indicator-mouse"><span class="indicator-wheel"></span></span>
+      <span class="indicator-text">Scroll to explore</span>
+    </a>
+  </header>
+
+  <main>
+    <!-- 01 About Section -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <span class="meta-label">01 / ABOUT</span>
+        <h2 class="section-title">A Little About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text-column">
+          <blockquote class="featured-quote">"Somewhere between analytical thinking and creative expression, that's where I find myself."</blockquote>
+          <p>I'm Vageesha, a first-year BBA student at St. Joseph's University, Bengaluru, and concurrently pursuing the BBA programme at IIM Bangalore with a specialisation in Digital Business and Entrepreneurship.</p>
+          <p>Coming from a science background, I enjoy exploring different fields and connecting ideas across disciplines.</p>
+          <p>I am someone who enjoys balancing analytical thinking with creativity. Whether it's organising an event, presenting an idea, experimenting with web design or working on creative projects, I love learning through experiences.</p>
+          <p>I'm interested in exploring opportunities where business, communication, creativity and technology come together.</p>
+        </div>
+        <div class="about-visual-column">
+          <div class="abyss-card">
+            <h3 class="card-heading">Guiding Principles</h3>
+            <div class="tag-cloud">
+              <span class="tag">Creative Thinker</span>
+              <span class="tag">Problem Solver</span>
+              <span class="tag">Curious Explorer</span>
+              <span class="tag">Lifelong Learner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 Education Section -->
+    <section id="education" class="section">
+      <div class="section-header">
+        <span class="meta-label">02 / ACADEMICS</span>
+        <h2 class="section-title">My Academic Journey</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content card">
+            <span class="timeline-date">First Year | Expected 2029</span>
+            <h3 class="timeline-title">St. Joseph's University, Bengaluru</h3>
+            <p class="timeline-subtitle">Bachelor of Business Administration (BBA)</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content card">
+            <span class="timeline-date">Expected 2029</span>
+            <h3 class="timeline-title">Indian Institute of Management Bangalore</h3>
+            <p class="timeline-subtitle">Bachelor of Business Administration (BBA)</p>
+            <p class="timeline-detail">Specialisation: Digital Business and Entrepreneurship</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content card">
+            <span class="timeline-date">2024</span>
+            <h3 class="timeline-title">Kendriya Vidyalaya</h3>
+            <p class="timeline-subtitle">Class XII (Science – PCB)</p>
+            <p class="timeline-detail badge-detail">Score: 83%</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content card">
+            <span class="timeline-date">2022</span>
+            <h3 class="timeline-title">Kendriya Vidyalaya</h3>
+            <p class="timeline-subtitle">Class X</p>
+            <p class="timeline-detail badge-detail">Score: 89%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 Experience Section -->
+    <section id="experience" class="section">
+      <div class="section-header">
+        <span class="meta-label">03 / LEADERSHIP &amp; VOLUNTEERING</span>
+        <h2 class="section-title">Experiences That Shaped Me</h2>
+      </div>
+      <div class="cards-grid">
+        <div class="card experience-card">
+          <div class="card-meta">
+            <span class="meta-date">August 2026</span>
+            <span class="meta-badge">Speaker Ops</span>
+          </div>
+          <h3 class="card-heading">College Open Day</h3>
+          <p class="card-subheading">Event Volunteer – Backstage and Speaker Coordination</p>
+          <ul class="card-list">
+            <li>Supported backstage operations and certificate and memento distribution.</li>
+            <li>Coordinated schedules and monitored session timings for 15 speakers.</li>
+            <li>Checked speaker availability and supported event-day coordination for an audience of 300+.</li>
+          </ul>
+        </div>
+        <div class="card experience-card">
+          <div class="card-meta">
+            <span class="meta-date">September 2026</span>
+            <span class="meta-badge">Business Competition</span>
+          </div>
+          <h3 class="card-heading">Regalia – Best Manager Competition</h3>
+          <p class="card-subheading">Event Volunteer</p>
+          <ul class="card-list">
+            <li>Coordinated with event heads and judges during a two-day business department competition.</li>
+            <li>Monitored participants and supported adherence to competition rules and fair-play guidelines.</li>
+            <li>Managed participant coordination and event schedules; the competition began with 15 participants, with 4 qualifying for the finals.</li>
+          </ul>
+        </div>
+        <div class="card experience-card">
+          <div class="card-meta">
+            <span class="meta-date">October 2026</span>
+            <span class="meta-badge">Documentation</span>
+          </div>
+          <h3 class="card-heading">Pratibha</h3>
+          <p class="card-subheading">Documentation Team Volunteer</p>
+          <ul class="card-list">
+            <li>Collaborated with a six-member team on documentation and scheduling for more than 50 college events.</li>
+            <li>Helped organise and maintain event information and coordinate schedules.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 Presentations Section -->
+    <section id="presentations" class="section">
+      <div class="section-header">
+        <span class="meta-label">04 / PRESENTATIONS</span>
+        <h2 class="section-title">Ideas Worth Sharing</h2>
+      </div>
+      <div class="card presentation-card">
+        <div class="presentation-header">
+          <span class="meta-badge">Academic Presentation</span>
+          <span class="highlight-pill">80+ Student Audience</span>
+        </div>
+        <h3 class="presentation-title">Economics Presentation – Oligopoly</h3>
+        <p class="presentation-desc">Prepared and delivered an in-depth presentation on oligopoly to an audience of 80+ students. Explained market structures, collusion models, and price interdependence by translating complex economic theory into clear, structured visual insights.</p>
+      </div>
+    </section>
+
+    <!-- 05 Skills Section -->
+    <section id="skills" class="section">
+      <div class="section-header">
+        <span class="meta-label">05 / CAPABILITIES</span>
+        <h2 class="section-title">Things I Bring to the Table</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="card skill-category">
+          <h3 class="card-heading">Digital &amp; Technical</h3>
+          <div class="tag-cloud">
+            <span class="tag">Web Designing</span>
+            <span class="tag">Microsoft Excel</span>
+            <span class="tag">Canva</span>
+            <span class="tag">Microsoft PowerPoint</span>
+          </div>
+        </div>
+        <div class="card skill-category">
+          <h3 class="card-heading">Business &amp; Organisational</h3>
+          <div class="tag-cloud">
+            <span class="tag">Event Coordination</span>
+            <span class="tag">Documentation</span>
+            <span class="tag">Team Coordination</span>
+            <span class="tag">Planning &amp; Scheduling</span>
+            <span class="tag">Problem Solving</span>
+          </div>
+        </div>
+        <div class="card skill-category">
+          <h3 class="card-heading">Communication</h3>
+          <div class="tag-cloud">
+            <span class="tag">Public Speaking</span>
+            <span class="tag">Presentation Skills</span>
+            <span class="tag">Communication</span>
+          </div>
+        </div>
+        <div class="card skill-category">
+          <h3 class="card-heading">Creative</h3>
+          <div class="tag-cloud">
+            <span class="tag">Drawing</span>
+            <span class="tag">Sketching</span>
+            <span class="tag">Painting</span>
+            <span class="tag">Embroidery</span>
+            <span class="tag">Crafts</span>
+          </div>
+        </div>
+      </div>
+      <div class="strengths-box">
+        <span class="meta-label">Personal Strengths</span>
+        <p class="strengths-text">Creative, resilient, hardworking, adaptable and problem-solving oriented.</p>
+      </div>
+    </section>
+
+    <!-- 06 Creative Interests Section -->
+    <section id="interests" class="section">
+      <div class="section-header">
+        <span class="meta-label">06 / CREATIVE PURSUITS</span>
+        <h2 class="section-title">Beyond Business, There Is Creativity</h2>
+      </div>
+      <p class="section-lead">Creative exploration that grounds my analytical studies: drawing, sketching, painting, embroidery, and arts &amp; crafts.</p>
+      <div class="creative-grid">
+        <div class="creative-card">
+          <div class="creative-frame"><span class="frame-label">Personal Sketching &amp; Art</span></div>
+          <h3 class="creative-title">Drawing &amp; Sketching</h3>
+          <p class="creative-caption">Focusing on line work, anatomy, and expressive graphite forms.</p>
+        </div>
+        <div class="creative-card">
+          <div class="creative-frame"><span class="frame-label">Painting &amp; Color Studies</span></div>
+          <h3 class="creative-title">Painting</h3>
+          <p class="creative-caption">Exploring pigment behavior, textures, and fluid palettes.</p>
+        </div>
+        <div class="creative-card">
+          <div class="creative-frame"><span class="frame-label">Embroidery &amp; Handcraft</span></div>
+          <h3 class="creative-title">Embroidery &amp; Crafts</h3>
+          <p class="creative-caption">Meticulous thread work, patience, and tactile pattern design.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 Areas of Interest Section -->
+    <section id="areas-of-interest" class="section">
+      <div class="section-header">
+        <span class="meta-label">07 / EXPLORATION</span>
+        <h2 class="section-title">Where Curiosity Takes Me</h2>
+      </div>
+      <div class="constellation-grid">
+        <div class="constellation-node">Marketing &amp; Social Media</div>
+        <div class="constellation-node">Business Development</div>
+        <div class="constellation-node">Content Writing &amp; Communication</div>
+        <div class="constellation-node">Graphic Design &amp; Creative Work</div>
+        <div class="constellation-node">Finance &amp; Accounting</div>
+        <div class="constellation-node">Event Management</div>
+        <div class="constellation-node">Public Relations</div>
+        <div class="constellation-node">Research &amp; Administration</div>
+      </div>
+    </section>
+
+    <!-- Paper Resume Section (Print Target) -->
+    <section id="resume" class="section resume-section">
+      <div class="resume-controls">
+        <a href="resume.pdf" download="Vageesha_Resume.pdf" class="btn btn-resume-download">Download my resume (PDF)</a>
+      </div>
+      <div class="resume-paper">
+        <header class="resume-header">
+          <h1 class="resume-name">VAGEESHA</h1>
+          <p class="resume-contact">Bengaluru, Karnataka, India | <a href="mailto:vvaaggee007@gmail.com">vvaaggee007@gmail.com</a> | <a href="https://linkedin.com/in/vageesha-60553a422" target="_blank" rel="noopener noreferrer">linkedin.com/in/vageesha-60553a422</a></p>
+        </header>
+
+        <section class="resume-block">
+          <h2 class="resume-heading">PROFESSIONAL SUMMARY</h2>
+          <p class="resume-text">First-year BBA student at St. Joseph's University, Bengaluru, concurrently pursuing the BBA programme at IIM Bangalore with a specialisation in Digital Business and Entrepreneurship. Creative, resilient and hardworking, with problem-solving skills and college experience in event coordination, speaker management, documentation and scheduling. Presented an economics topic to an audience of 80+ students. Interested in internship opportunities across business, marketing, communications, creative work and event management.</p>
+        </section>
+
+        <section class="resume-block">
+          <h2 class="resume-heading">EDUCATION</h2>
+          <div class="resume-item">
+            <div class="resume-item-header"><strong>St. Joseph's University, Bengaluru</strong> <span>Expected graduation: 2029</span></div>
+            <p>Bachelor of Business Administration (BBA) | First Year</p>
+          </div>
+          <div class="resume-item">
+            <div class="resume-item-header"><strong>Indian Institute of Management Bangalore</strong> <span>Expected completion: 2029</span></div>
+            <p>Bachelor of Business Administration (BBA), specialisation in Digital Business and Entrepreneurship</p>
+          </div>
+          <div class="resume-item">
+            <div class="resume-item-header"><strong>Kendriya Vidyalaya</strong> <span>2024</span></div>
+            <p>Class XII (Science – PCB) | 83%</p>
+          </div>
+          <div class="resume-item">
+            <div class="resume-item-header"><strong>Kendriya Vidyalaya</strong> <span>2022</span></div>
+            <p>Class X | 89%</p>
+          </div>
+        </section>
+
+        <section class="resume-block">
+          <h2 class="resume-heading">VOLUNTEERING EXPERIENCE</h2>
+          <div class="resume-item">
+            <div class="resume-item-header"><strong>College Open Day</strong> | Event Volunteer – Backstage and Speaker Coordination <span>August 2026</span></div>
+            <ul class="resume-bullets">
+              <li>Supported backstage operations and certificate and memento distribution.</li>
+              <li>Coordinated schedules and monitored session timings for 15 speakers.</li>
+              <li>Checked speaker availability and supported event-day coordination for an audience of 300+.</li>
+            </ul>
+          </div>
+          <div class="resume-item">
+            <div class="resume-item-header"><strong>Regalia – Best Manager Competition</strong> | Event Volunteer <span>September 2026</span></div>
+            <ul class="resume-bullets">
+              <li>Coordinated with event heads and judges during a two-day business department competition.</li>
+              <li>Monitored participants and supported adherence to competition rules and fair-play guidelines.</li>
+              <li>Managed participant coordination and event schedules; the competition began with 15 participants, with 4 qualifying for the finals.</li>
+            </ul>
+          </div>
+          <div class="resume-item">
+            <div class="resume-item-header"><strong>Pratibha</strong> | Documentation Team Volunteer <span>October 2026</span></div>
+            <ul class="resume-bullets">
+              <li>Collaborated with a six-member team on documentation and scheduling for more than 50 college events.</li>
+              <li>Helped organise and maintain event information and coordinate schedules.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="resume-block">
+          <h2 class="resume-heading">ACADEMIC PRESENTATION</h2>
+          <div class="resume-item">
+            <div class="resume-item-header"><strong>Economics Presentation – Oligopoly</strong></div>
+            <ul class="resume-bullets">
+              <li>Prepared and delivered a presentation on oligopoly to an audience of 80+ students.</li>
+              <li>Explained an economics concept to a large student audience using presentation skills.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="resume-block">
+          <h2 class="resume-heading">SKILLS</h2>
+          <p><strong>Digital and technical:</strong> Web designing, Microsoft Excel, Canva, Microsoft PowerPoint</p>
+          <p><strong>Business and organisational:</strong> Event coordination, documentation, team coordination, planning and scheduling, problem-solving</p>
+          <p><strong>Communication:</strong> Public speaking, presentation skills, communication</p>
+          <p><strong>Creative:</strong> Drawing, sketching, painting, embroidery and crafts</p>
+        </section>
+
+        <section class="resume-block">
+          <h2 class="resume-heading">PERSONAL STRENGTHS</h2>
+          <p>Creative, resilient, hardworking, adaptable and problem-solving oriented.</p>
+        </section>
+
+        <section class="resume-block">
+          <h2 class="resume-heading">AREAS OF INTEREST</h2>
+          <p>Marketing and social media, business development, content writing and communication, graphic design and creative work, finance and accounting, event management, public relations, research and administration.</p>
+        </section>
+      </div>
+    </section>
+
+    <!-- 08 Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="section-header">
+        <span class="meta-label">08 / CONTACT</span>
+        <h2 class="section-title">Let's Create Something Meaningful</h2>
+      </div>
+      <p class="contact-desc">Always open to learning, meaningful conversations, creative collaborations and internship opportunities.</p>
+      <div class="btn-group contact-actions">
+        <a href="mailto:vvaaggee007@gmail.com?subject=Internship%20Opportunity" class="btn btn-primary">Email Me</a>
+        <a href="https://linkedin.com/in/vageesha-60553a422" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">LinkedIn Profile</a>
+        <button id="copy-email-btn" class="btn btn-outline" data-email="vvaaggee007@gmail.com">Copy Email</button>
+      </div>
+      <span id="copy-feedback" class="copy-feedback" aria-live="polite"></span>
+      <p class="closing-statement">"Every great journey begins somewhere. Perhaps this is where ours begins."</p>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <p>&copy; <span id="current-year">2026</span> Vageesha | Designed with curiosity.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
